@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Invoices",
+    "data": {
+      "info": ""
+    }
+  },
+  {
+    "name": "Clients",
+    "data": {
+      "info": "collection of clients here. Add a button for creating a new client."
+    }
+  },
+  {
+    "name": "Settings",
+    "data": {
+      "info": "Modify user settings and personal information here."
+    }
+  }
+]

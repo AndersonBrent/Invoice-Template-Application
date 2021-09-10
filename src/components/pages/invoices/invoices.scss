@@ -1,0 +1,162 @@
+
+.invoices {
+  @import "./utility-bar"; // separate styling page for the utility bar for simplicity.
+
+  .invoice-list {
+    margin-top: 35px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 1000px;
+    border: 2px solid #888;
+    border-top: 1px solid #888;
+    background-color: white;
+    border-radius: 5px 5px 5px 40px;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3),
+                inset 2px 2px 8px rgba(0, 0, 0, 0.2),
+                inset -2px -2px 8px rgba(0, 0, 0, 0.2);
+
+    table {
+      user-select: none;
+      display: table;
+      border-collapse: collapse;
+      width: 100%;
+
+      tr {
+        text-align: left;
+        display: table-row;
+
+        &.headers {
+          background-color: #555;
+
+          th {
+            color: white;
+            letter-spacing: 1px;
+            border-top: 1px solid #888;
+
+            &:nth-child(1) {
+              border-radius: 5px 0 0 0;
+            }
+
+            &:nth-child(4) {
+              border-radius: 0 5px 0 0;
+            }
+          }
+        }
+
+        &.invoice-line {
+          .delete-container {
+            display: inline-block;
+            float: right;
+            height: 16px;
+
+            .delete-btn {
+              cursor: pointer;
+              box-sizing: border-box;
+              display: none;
+              position: absolute;
+              text-shadow: 0 0 2px white;
+              border: 1px solid #888;
+              border-radius: 2px;
+              margin-top: -8px;
+              margin-left: -19px;
+              height: 33px;
+              padding: 0 10px;
+              line-height: 33px;
+              background-color: #555;
+              color: white;
+
+              &:hover {
+                background-color: #666;
+              }
+
+              &:active {
+                background-color: #777;
+              }
+            }
+          }
+        }
+
+        &:hover {
+          &.invoice-line {
+            background-color: rgba(#a1c4fd, .5);
+
+            .delete-container .delete-btn {
+              display: block;
+            }
+          }
+
+          td {
+            color: #444;
+
+            &.green {
+              color: darken(#1DBC60, 5%);
+            }
+
+            &.red {
+              color: darken(red, 5%);
+            }
+          }
+
+          &.totals { // no hover state for totals
+            td {
+              color: #888;
+
+              &.green {
+                color: #1DBC60;
+              }
+
+              &.red {
+                color: red;
+              }
+            }
+          }
+        }
+
+        &:active {
+          &.invoice-line {
+            background-color: rgba(#a1c4fd, .4);
+          }
+
+          td {
+            color: #888;
+
+            &.green {
+              color: #1DBC60;
+            }
+
+            &.red {
+              color: red;
+            }
+          }
+        }
+      }
+
+      td, th {
+        padding: 8px 12px;
+        font-size: 14px;
+      }
+
+      th {
+        color: #444;
+        border-bottom: 2px solid #bbb;
+      }
+
+      td {
+        color: #888;
+        border-bottom: 1px solid #ddd;
+
+        &.no-border {
+          border-bottom: 0;
+        }
+
+        &.green {
+          color: #1DBC60;
+        }
+
+        &.red {
+          color: red;
+        }
+      }
+    }
+  }
+}

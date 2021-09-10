@@ -1,0 +1,204 @@
+[
+  {
+    "userID": "0",
+    "user": "template",
+    "pass": "",
+    "personalInfo": {
+      "name": "",
+      "address": "",
+      "email": "",
+      "phone": ""
+    },
+    "clients": [],
+    "invoices": [
+      {
+        "invoiceID": "1",
+        "invoiceName": "",
+        "clientID": "",
+        "fromName": "",
+        "fromEmail": "",
+        "fromAddress": {
+          "street": "",
+          "cityState": "",
+          "zip": ""
+        },
+        "fromPhone": "",
+        "toName": "",
+        "toEmail": "",
+        "toAddress": {
+          "street": "",
+          "cityState": "",
+          "zip": ""
+        },
+        "toPhone": "",
+        "date": "2020-09-10",
+        "amountBilled": null,
+        "balanceDue": null,
+        "items": [
+          {
+            "description": "",
+            "rate": null,
+            "qty": null,
+            "tax": false,
+            "additionalDetails": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "userID": "1",
+    "user": "",
+    "pass": "",
+    "personalInfo": {
+      "name": "Guest",
+      "address": "",
+      "email": "",
+      "phone": ""
+    },
+    "clients": [],
+    "invoices": []
+  },
+  {
+    "userID": "2",
+    "user": "admin",
+    "pass": "pass",
+    "personalInfo": {
+      "name": "The King",
+      "address": "915 merry dr.",
+      "email": "john.smith@gmail.com",
+      "phone": "(715) 815-2845"
+    },
+    "clients": [
+      {
+        "clientID": "1",
+        "name": "Google",
+        "address": "123 main st.",
+        "email": "google@gmail.com",
+        "phone": "(123) 456-7890"
+      },
+      {
+        "clientID": "2",
+        "name": "Amazon",
+        "address": "678 blane rd.",
+        "email": "amazon@gmail.com",
+        "phone": "(123) 456-7890"
+      }
+    ],
+    "invoices": [
+      {
+        "invoiceID": "1",
+        "invoiceName": "Invoice #1",
+        "clientID": "1",
+        "fromName": "The King",
+        "fromEmail": "testingInvalid.fdsa",
+        "fromAddress": {
+          "street": "",
+          "cityState": "",
+          "zip": ""
+        },
+        "fromPhone": "",
+        "toName": "Google",
+        "toEmail": "testing@email.com",
+        "toAddress": {
+          "street": "123 apple ln.",
+          "cityState": "Los Angeles, CA",
+          "zip": "90001"
+        },
+        "toPhone": "(123) 456-7890",
+        "date": "2020-09-10",
+        "amountBilled": 185.65,
+        "balanceDue": 0,
+        "items": [
+          {
+            "description": "rubber bands",
+            "rate": 37.13,
+            "qty": 5,
+            "tax": false,
+            "additionalDetails": "additional details.."
+          }
+        ]
+      },
+      {
+        "invoiceID": "2",
+        "invoiceName": "Invoice #1",
+        "clientID": "2",
+        "fromName": "Joe",
+        "fromEmail": "testingInvalid.fdsa",
+        "fromAddress": {
+          "street": "",
+          "cityState": "",
+          "zip": ""
+        },
+        "fromPhone": "",
+        "toName": "Amazon",
+        "toEmail": "testing@email.com",
+        "toAddress": {
+          "street": "123 apple ln.",
+          "cityState": "Los Angeles, CA",
+          "zip": "90001"
+        },
+        "toPhone": "(123) 456-7890",
+        "date": "2020-09-10",
+        "amountBilled": 385.65,
+        "balanceDue": 0,
+        "items": [
+          {
+            "description": "paper clips",
+            "rate": 37.13,
+            "qty": 5,
+            "tax": false,
+            "additionalDetails": "Additional details for paper clips.."
+          },
+          {
+            "description": "apples",
+            "rate": 40,
+            "qty": 5,
+            "tax": false,
+            "additionalDetails": "Additional details for apples.."
+          }
+        ]
+      },
+      {
+        "invoiceID": "3",
+        "invoiceName": "Invoice #2",
+        "clientID": "2",
+        "fromName": "Joe",
+        "fromEmail": "testingInvalid.fdsa",
+        "fromAddress": {
+          "street": "",
+          "cityState": "",
+          "zip": ""
+        },
+        "fromPhone": "",
+        "toName": "Amazon",
+        "toEmail": "testing@email.com",
+        "toAddress": {
+          "street": "123 apple ln.",
+          "cityState": "Los Angeles, CA",
+          "zip": "90001"
+        },
+        "toPhone": "(123) 456-7890",
+        "date": "2020-09-10",
+        "amountBilled": 385.65,
+        "balanceDue": 385.65,
+        "items": [
+          {
+            "description": "paper clips",
+            "rate": 37.13,
+            "qty": 5,
+            "tax": false,
+            "additionalDetails": "Additional details for paper clips.."
+          },
+          {
+            "description": "apples",
+            "rate": 40,
+            "qty": 5,
+            "tax": false,
+            "additionalDetails": "Additional details for apples.."
+          }
+        ]
+      }
+    ]
+  }
+]
