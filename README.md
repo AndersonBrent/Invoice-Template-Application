@@ -3,13 +3,13 @@
 REQUIREMENTS - GIT, Node.js
 
 SETUP -
-  
+
   Step 1). Download and install the requirements if you don't already have them.
-  
+
   Step 2). Open up GIT wherever you would like to clone the project by simply right clicking and selecting "Git Bash Here" and run this command: ```git clone https://github.com/ICS-370/Invoice-Template-Application.git``` to get a copy of the repository.
-  
-  Steo 3). After the project is cloned, make sure all of the dependencies are installed by running: ```npm i``` and this will create a "node_modules" folder at the root of the project.
-  
+
+  Step 3). After the project is cloned, make sure all of the dependencies are installed by running: ```npm i``` and this will create a "node_modules" folder at the root of the project.
+
   Step 4). Once you have all of the project dependencies installed you'll be able to run: ```npm run start``` to get a local server running with react. It usually takes a couple seconds and then your browser should automatically open with the project in view.
 
 
@@ -17,12 +17,12 @@ GOAL - Develop a responsive web application for converting modifiable HTML invoi
 
 INCLUDE:
   - A main landing page for login/registration:
- 
+
     A). Registration should ask for relevant personal information like: name, email, address, phone #, etc...
-    
+
 
   - Once logged in, navigation for:
-  
+
     A). A collection of invoices.
       1) Button for creating new invoices.
       2) View existing invoices based on client -> invoice #, date, and amount.
