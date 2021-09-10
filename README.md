@@ -1,8 +1,8 @@
 # Invoice
 
-SETUP -
+REQUIREMENTS - GIT, Node.js
 
-  requirements: GIT, Node.js
+SETUP -
   
   Step 1). Download and install the requirements if you don't already have them.
   
