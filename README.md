@@ -10,7 +10,7 @@ SETUP -
   
   Steo 3). After the project is cloned, make sure all of the dependencies are installed by running: ```npm i``` and this will create a "node_modules" folder at the root of the project.
   
-  Step 4). Once you have all of the project dependencies you'll be able to run: ```npm run start``` to get a local server running with react. It usually takes a couple seconds and then your browser should automatically open so you can see the project within the browser locally.
+  Step 4). Once you have all of the project dependencies installed you'll be able to run: ```npm run start``` to get a local server running with react. It usually takes a couple seconds and then your browser should automatically open so you can see the project within the browser locally.
 
 
 GOAL - Develop a responsive web application for converting modifiable HTML invoices into a collection for personal use.
