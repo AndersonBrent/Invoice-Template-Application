@@ -7,6 +7,7 @@ INCLUDE:
     A) Registration should ask for relevant personal information like: name, email, address, phone #, etc...
 
   - Once logged in, navigation for:
+  
     A) A collection of invoices.
       1) Button for creating new invoices.
       2) View existing invoices based on client -> invoice #, date, and amount.
