@@ -3,10 +3,10 @@
 GOAL - Develop a responsive web application for converting modifiable HTML invoices into a collection for personal use.
 
 INCLUDE:
-  1) A main landing page for login/registration.
+  - A main landing page for login/registration:
     A) Registration should ask for relevant personal information like: name, email, address, phone #, etc...
 
-  2) Navigation for:
+  - Once logged in, navigation for:
     A) A collection of invoices.
       1) Button for creating new invoices.
       2) View existing invoices based on client -> invoice #, date, and amount.
@@ -15,7 +15,7 @@ INCLUDE:
       3) Don't show client if there's no invoices.
       4) Button for toggling All, paid, and unpaid invoices.
 
-    B) A collection of invoiceable clients.
+    B) A collection of clients.
       1) Add new clients here.        
       2) View existing clients based on name, email, address, and phone.
         a) Modify/delete clickable client from editing pane.
