@@ -1,4 +1,4 @@
-# Invoice-PDF
+# Invoice
 
 GOAL - Develop a responsive web application for converting modifiable HTML invoices into a collection for personal use.
 
