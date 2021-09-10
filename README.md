@@ -4,7 +4,9 @@ GOAL - Develop a responsive web application for converting modifiable HTML invoi
 
 INCLUDE:
   - A main landing page for login/registration:
+ 
     A) Registration should ask for relevant personal information like: name, email, address, phone #, etc...
+    
 
   - Once logged in, navigation for:
   
