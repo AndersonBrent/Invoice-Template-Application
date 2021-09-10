@@ -5,12 +5,12 @@ GOAL - Develop a responsive web application for converting modifiable HTML invoi
 INCLUDE:
   - A main landing page for login/registration:
  
-    A) Registration should ask for relevant personal information like: name, email, address, phone #, etc...
+    A). Registration should ask for relevant personal information like: name, email, address, phone #, etc...
     
 
   - Once logged in, navigation for:
   
-    A) A collection of invoices.
+    A). A collection of invoices.
       1) Button for creating new invoices.
       2) View existing invoices based on client -> invoice #, date, and amount.
         a) Modify/delete clickable invoice from editing pane.
@@ -18,13 +18,13 @@ INCLUDE:
       3) Don't show client if there's no invoices.
       4) Button for toggling All, paid, and unpaid invoices.
 
-    B) A collection of clients.
+    B). A collection of clients.
       1) Add new clients here.        
       2) View existing clients based on name, email, address, and phone.
         a) Modify/delete clickable client from editing pane.
 
-    C) User settings.
+    C). User settings.
       1) Will keep track of personal information set at registration.
       2) Modifiable from this tab.
 
-    D) Logging out.
+    D). Logging out.
