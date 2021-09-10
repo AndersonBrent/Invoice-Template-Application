@@ -8,7 +8,7 @@ SETUP -
   
   Step 2). Open up GIT wherever you would like to clone the project by simply right clicking and selecting "Git Bash Here" and run this command: ```git clone https://github.com/ICS-370/Invoice-Template-Application.git``` to get a copy of the repository.
   
-  Steo 3). Make sure all of the dependencies are installed by running: ```npm i``` and this will create a "node_modules" folder at the root of the project.
+  Steo 3). After the project is cloned, make sure all of the dependencies are installed by running: ```npm i``` and this will create a "node_modules" folder at the root of the project.
   
   Step 4). Once you have all of the project dependencies you'll be able to run: ```npm run start``` to get a local server running with react. It usually takes a couple seconds and then your browser should automatically open so you can see the project within the browser locally.
 
