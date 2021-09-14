@@ -186,12 +186,12 @@ export default class Invoices extends React.Component {
             <div
               className={`button invoices${invoice.activeButton === "allInvoices" ? " selected" : ""}`}
               onMouseDown={this.handleActiveBtn("allInvoices")}
-            > All Inoivces </div>
+            > All Invoices </div>
 
             <div
               className={`button unpaid${invoice.activeButton === "unpaid" ? " selected" : ""}`}
               onMouseDown={this.handleActiveBtn("unpaid")}
-            > UnPaid </div>
+            > Unpaid </div>
 
             <div
               className={`button paid${invoice.activeButton === "paid" ? " selected" : ""}`}
