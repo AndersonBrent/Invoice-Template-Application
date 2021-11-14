@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../../../styles/pages/invoices/preview/preview.css';
+import './preview.scss';
 import GetApp from '@material-ui/icons/GetApp';
 // import Pdfcrowd from 'pdfcrowd';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../styles/login-signup/login-signup.css';
+import './login-signup.scss';
 
 export default class LoginSignUp extends React.Component {
   state = {

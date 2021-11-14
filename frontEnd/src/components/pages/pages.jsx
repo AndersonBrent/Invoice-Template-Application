@@ -4,7 +4,7 @@ import Invoices from './invoices/invoices.jsx';
 import Clients from './clients/clients.jsx';
 import Settings from './settings/settings.jsx';
 
-import '../../styles/pages/pages.css';
+import './pages.scss';
 
 export default class Pages extends React.Component {
 

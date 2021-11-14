@@ -8,7 +8,7 @@ import Pages from './pages/pages.jsx';
 
 //styling
 import 'fontsource-roboto';
-import '../styles/app.css';
+import './app.scss';
 
 export default class App extends React.Component {
   state = {
@@ -23,7 +23,7 @@ export default class App extends React.Component {
   };
 
   componentDidMount() {
-    fetch( 'http://localhost:3000/data', {
+    fetch( '/data', {
         method: 'GET',
       } )
       .then( response => {

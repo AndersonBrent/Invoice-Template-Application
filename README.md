@@ -1,6 +1,6 @@
 # Invoice
 
-REQUIREMENTS - GIT, Node.js ( Ruby: this is needed if you're looking to make style changes )
+REQUIREMENTS - GIT, Node.js
 
 SETUP -
 
@@ -12,7 +12,7 @@ SETUP -
 
   Step 4). Once you have all of the project dependencies installed you'll be able to run: ```node index.js``` from the backend directory to get a backend server initialized. The same will need to be done for the frontend, by running: ```npm start```
 
-  step 5). Anyone looking to see your changes being made, have a 3rd/4th command line open and run: ```npm run sass``` to see your most recent styling changes and ```npm run build``` to see any other content/functional changes being made to the frontend. *Note: any content/functional changes made to the frontend will require the browser to be refreshed --hot reloading hasn't been added to webpack yet.
+  step 5). Anyone looking to see your changes being made, have a 3rd command line open and run: ```npm run build``` to see any other content/functional changes being made to the frontend. *Note: any content/functional changes made to the frontend will require the browser to be refreshed --hot reloading hasn't been added to webpack yet, which is why we need to run the server separate from the build script.
 
 
 GOAL - Develop a responsive web application for converting modifiable HTML invoices into a collection for personal use.

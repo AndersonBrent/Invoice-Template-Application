@@ -5,7 +5,7 @@
 
 import React from 'react';
 
-import '../../../../styles/pages/invoices/manageable/manageable.css';
+import './manageable.scss';
 import Preview from '../preview/preview.jsx';
 
 export default class Manageable extends React.Component {

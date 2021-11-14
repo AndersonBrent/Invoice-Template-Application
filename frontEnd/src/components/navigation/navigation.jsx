@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../styles/navigation/navigation.css';
+import './navigation.scss';
 
 export default class Navigation extends React.Component {
   state = {

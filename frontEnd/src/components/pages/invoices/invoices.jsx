@@ -2,7 +2,7 @@ import React from 'react';
 import Moment from 'moment';
 
 import Manageable from './manageable/manageable.jsx';
-import '../../../styles/pages/invoices/invoices.css';
+import './invoices.scss';
 
 export default class Invoices extends React.Component {
 
