@@ -1,0 +1,222 @@
+.invoices .utility-bar {
+  padding: 10px;
+}
+.invoices .utility-bar .button {
+  cursor: pointer;
+  user-select: none;
+  float: left;
+  background-image: linear-gradient(to bottom, #ccc 0%, #FFF 10%, #ccc 85%, #ccc 100%);
+  height: 20px;
+  line-height: 22px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #444;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: 0.1s ease-in-out;
+}
+.invoices .utility-bar .button.new-inv {
+  position: relative;
+  float: right;
+  color: white;
+  border: 1px solid #bbb;
+  background-color: #555;
+  background-image: none;
+  transition: 0.2s ease-in-out;
+}
+.invoices .utility-bar .button.new-inv:hover {
+  transform: scale(1.02);
+  background-color: #666;
+  background-image: none;
+  border: 1px solid #bbb;
+  text-shadow: 0 0 1px white;
+  transition: 0.2s ease-in-out;
+}
+.invoices .utility-bar .button.new-inv:active {
+  transform: scale(0.98);
+  background-color: #555;
+  background-image: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  height: 20px;
+  border: 1px solid #bbb;
+  text-shadow: 0 0 0 white;
+  transition: 0.1s ease-in-out;
+}
+.invoices .utility-bar .button.invoices {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-left: 1px solid #888;
+}
+.invoices .utility-bar .button.unpaid {
+  border-radius: 0;
+  border-left: 0;
+}
+.invoices .utility-bar .button.paid {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-left: 0;
+}
+.invoices .utility-bar .button.invoices, .invoices .utility-bar .button.paid, .invoices .utility-bar .button.unpaid {
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  border-right: 1px solid #888;
+}
+.invoices .utility-bar .button:hover {
+  border: 1px solid #666;
+  background-image: linear-gradient(to bottom, #ccc 0%, #FFF 5%, #FFF 15%, #ccc 90%, #ccc 100%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: 0.2s ease-in-out;
+}
+.invoices .utility-bar .button:hover.paid, .invoices .utility-bar .button:hover.unpaid {
+  border: 1px solid #666;
+  border-left: 0;
+}
+.invoices .utility-bar .button:hover.invoices {
+  border: 1px solid #666;
+}
+.invoices .utility-bar .button.selected {
+  cursor: default;
+}
+.invoices .utility-bar .button.selected:hover {
+  border: 1px solid #aaa;
+}
+.invoices .utility-bar .button:active, .invoices .utility-bar .button.selected {
+  background-image: linear-gradient(to bottom, #bbb 0%, #FFF 2%, #bbb 85%, #bbb 100%);
+  box-shadow: inset 0 1.5px 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid #aaa;
+  margin-top: 1px;
+  height: 18px;
+  transition: 0.1s ease-in-out;
+}
+.invoices .utility-bar .button:active.unpaid, .invoices .utility-bar .button:active.paid, .invoices .utility-bar .button.selected.unpaid, .invoices .utility-bar .button.selected.paid {
+  border-left: 0;
+}
+.invoices .utility-bar .button:active.unpaid, .invoices .utility-bar .button.selected.unpaid {
+  border-top: 1px solid #888;
+  border-right: 1px solid #888;
+}
+.invoices .utility-bar .button:active.invoices, .invoices .utility-bar .button.selected.invoices {
+  border-left: 1px solid #888;
+  border-top: 1px solid #888;
+}
+.invoices .invoice-list {
+  margin-top: 35px;
+  margin-left: 10px;
+  margin-right: 10px;
+  max-width: 1000px;
+  border: 2px solid #888;
+  border-top: 1px solid #888;
+  background-color: white;
+  border-radius: 5px 5px 5px 40px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3), inset 2px 2px 8px rgba(0, 0, 0, 0.2), inset -2px -2px 8px rgba(0, 0, 0, 0.2);
+}
+.invoices .invoice-list table {
+  user-select: none;
+  display: table;
+  border-collapse: collapse;
+  width: 100%;
+}
+.invoices .invoice-list table tr {
+  text-align: left;
+  display: table-row;
+}
+.invoices .invoice-list table tr.headers {
+  background-color: #555;
+}
+.invoices .invoice-list table tr.headers th {
+  color: white;
+  letter-spacing: 1px;
+  border-top: 1px solid #888;
+}
+.invoices .invoice-list table tr.headers th:nth-child(1) {
+  border-radius: 5px 0 0 0;
+}
+.invoices .invoice-list table tr.headers th:nth-child(4) {
+  border-radius: 0 5px 0 0;
+}
+.invoices .invoice-list table tr.invoice-line .delete-container {
+  display: inline-block;
+  float: right;
+  height: 16px;
+}
+.invoices .invoice-list table tr.invoice-line .delete-container .delete-btn {
+  cursor: pointer;
+  box-sizing: border-box;
+  display: none;
+  position: absolute;
+  text-shadow: 0 0 2px white;
+  border: 1px solid #888;
+  border-radius: 2px;
+  margin-top: -8px;
+  margin-left: -19px;
+  height: 33px;
+  padding: 0 10px;
+  line-height: 33px;
+  background-color: #555;
+  color: white;
+}
+.invoices .invoice-list table tr.invoice-line .delete-container .delete-btn:hover {
+  background-color: #666;
+}
+.invoices .invoice-list table tr.invoice-line .delete-container .delete-btn:active {
+  background-color: #777;
+}
+.invoices .invoice-list table tr:hover.invoice-line {
+  background-color: rgba(161, 196, 253, 0.5);
+}
+.invoices .invoice-list table tr:hover.invoice-line .delete-container .delete-btn {
+  display: block;
+}
+.invoices .invoice-list table tr:hover td {
+  color: #444;
+}
+.invoices .invoice-list table tr:hover td.green {
+  color: #1aa655;
+}
+.invoices .invoice-list table tr:hover td.red {
+  color: #e60000;
+}
+.invoices .invoice-list table tr:hover.totals td {
+  color: #888;
+}
+.invoices .invoice-list table tr:hover.totals td.green {
+  color: #1DBC60;
+}
+.invoices .invoice-list table tr:hover.totals td.red {
+  color: red;
+}
+.invoices .invoice-list table tr:active.invoice-line {
+  background-color: rgba(161, 196, 253, 0.4);
+}
+.invoices .invoice-list table tr:active td {
+  color: #888;
+}
+.invoices .invoice-list table tr:active td.green {
+  color: #1DBC60;
+}
+.invoices .invoice-list table tr:active td.red {
+  color: red;
+}
+.invoices .invoice-list table td, .invoices .invoice-list table th {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+.invoices .invoice-list table th {
+  color: #444;
+  border-bottom: 2px solid #bbb;
+}
+.invoices .invoice-list table td {
+  color: #888;
+  border-bottom: 1px solid #ddd;
+}
+.invoices .invoice-list table td.no-border {
+  border-bottom: 0;
+}
+.invoices .invoice-list table td.green {
+  color: #1DBC60;
+}
+.invoices .invoice-list table td.red {
+  color: red;
+}

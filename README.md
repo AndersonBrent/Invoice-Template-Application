@@ -1,6 +1,6 @@
 # Invoice
 
-REQUIREMENTS - GIT, Node.js
+REQUIREMENTS - GIT, Node.js ( Ruby: this is needed if you're looking to make style changes )
 
 SETUP -
 
@@ -8,9 +8,11 @@ SETUP -
 
   Step 2). Open up GIT wherever you would like to clone the project by simply right clicking and selecting "Git Bash Here" and run this command: ```git clone https://github.com/ICS-370/Invoice-Template-Application.git``` to get a copy of the repository.
 
-  Step 3). After the project is cloned, make sure all of the dependencies are installed by running: ```npm i``` and this will create a "node_modules" folder at the root of the project.
+  Step 3). After the project is cloned, make sure all of the dependencies are installed by running: ```npm i``` and this will create a "node_modules" folder at the root of the project ( you need to do this for both the frontend and backend directories specifically ).
 
-  Step 4). Once you have all of the project dependencies installed you'll be able to run: ```npm run start``` to get a local server running with react. It usually takes a couple seconds and then your browser should automatically open with the project in view.
+  Step 4). Once you have all of the project dependencies installed you'll be able to run: ```node index.js``` from the backend directory to get a backend server initialized. The same will need to be done for the frontend, by running: ```npm start```
+
+  step 5). Anyone looking to see your changes being made, have a 3rd/4th command line open and run: ```npm run sass``` to see your most recent styling changes and ```npm run build``` to see any other content/functional changes being made to the frontend. *Note: any content/functional changes made to the frontend will require the browser to be refreshed --hot reloading hasn't been added to webpack yet.
 
 
 GOAL - Develop a responsive web application for converting modifiable HTML invoices into a collection for personal use.
