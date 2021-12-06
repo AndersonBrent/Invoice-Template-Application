@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2021 at 12:41 AM
+-- Generation Time: Dec 07, 2021 at 12:07 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -29,7 +29,6 @@ USE `invoice`;
 -- Table structure for table `clients`
 --
 
-DROP TABLE IF EXISTS `clients`;
 CREATE TABLE `clients` (
   `id` int(4) NOT NULL,
   `user_id` int(4) NOT NULL COMMENT 'ID of employee who does business with the client',
@@ -47,7 +46,6 @@ CREATE TABLE `clients` (
 -- Table structure for table `invoices`
 --
 
-DROP TABLE IF EXISTS `invoices`;
 CREATE TABLE `invoices` (
   `id` int(6) NOT NULL,
   `client_id` int(4) NOT NULL,
@@ -64,10 +62,10 @@ CREATE TABLE `invoices` (
 -- Table structure for table `items`
 --
 
-DROP TABLE IF EXISTS `items`;
 CREATE TABLE `items` (
   `id` int(7) NOT NULL,
   `client_id` int(4) NOT NULL,
+  `invoice_id` int(5) DEFAULT NULL,
   `description` varchar(500) NOT NULL,
   `rate` decimal(6,2) NOT NULL,
   `quantity` int(6) NOT NULL,
@@ -81,7 +79,6 @@ CREATE TABLE `items` (
 -- Table structure for table `users`
 --
 
-DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
   `id` int(4) NOT NULL,
   `username` varchar(100) NOT NULL,
@@ -115,7 +112,8 @@ ALTER TABLE `invoices`
 --
 ALTER TABLE `items`
   ADD PRIMARY KEY (`id`),
-  ADD KEY `client_id_items_fk` (`client_id`);
+  ADD KEY `client_id_items_fk` (`client_id`),
+  ADD KEY `invoice_id_fk` (`invoice_id`);
 
 --
 -- Indexes for table `users`
@@ -173,7 +171,8 @@ ALTER TABLE `invoices`
 -- Constraints for table `items`
 --
 ALTER TABLE `items`
-  ADD CONSTRAINT `client_id_items_fk` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
+  ADD CONSTRAINT `client_id_items_fk` FOREIGN KEY (`client_id`) REFERENCES `clients` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  ADD CONSTRAINT `invoice_id_fk` FOREIGN KEY (`invoice_id`) REFERENCES `invoices` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

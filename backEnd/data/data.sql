@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 15, 2021 at 05:57 AM
+-- Generation Time: Dec 07, 2021 at 12:08 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 8.0.12
 
@@ -45,9 +45,10 @@ INSERT INTO `invoices` (`id`, `client_id`, `user_id`, `billing_date`, `due_date`
 -- Dumping data for table `items`
 --
 
-INSERT INTO `items` (`id`, `client_id`, `description`, `rate`, `quantity`, `tax`, `note`) VALUES
-(1, 1, 'thing', '19.99', 400, '0.07', 'it\'s an item'),
-(2, 2, 'another piece of junk', '56.50', 3, '0.09', 'Yup');
+INSERT INTO `items` (`id`, `client_id`, `invoice_id`, `description`, `rate`, `quantity`, `tax`, `note`) VALUES
+(1, 1, 1, 'thing', '19.99', 400, '0.07', 'it\'s an item'),
+(2, 2, 2, 'another piece of junk', '56.50', 3, '0.09', 'Yup'),
+(3, 2, 3, 'The only item for invoice 3', '44.00', 1, '120.00', '');
 
 --
 -- Dumping data for table `users`
